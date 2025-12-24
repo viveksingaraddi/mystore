@@ -1,0 +1,101 @@
+/* CSS Styles */
+:root {
+    --primary-color: #232f3e;
+    /* Amazon dark blue */
+    --accent-color: #ff9900;
+    /* Amazon orange */
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Grid */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Product Card */
+.product-card {
+    background: white;
+    border-radius: 12px;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.product-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    color: #b12704;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Amazon Button */
+.buy-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #e68a00;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+
