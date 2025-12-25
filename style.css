@@ -25,6 +25,14 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.productcategory {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
 /* Product Grid */
 .container {
     max-width: 1200px;
@@ -59,6 +67,12 @@ header {
     background-color: #eee;
 }
 
+.product-image7 {
+    width: 100%;
+    height: 262px;
+    object-fit: cover;
+    background-color: #eee;
+}
 .product-info {
     padding: 1.5rem;
     text-align: center;
