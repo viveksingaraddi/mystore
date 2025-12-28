@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refer & Earn</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="refer-header">Refer & Earn Program</h1>
+    </header>
+    <main>
+      <section>
+        <h2 class="refer-content">How It Works</h2>
+        <p class="refer-content">
+          Invite your friends to join our service and earn rewards for each
+          successful referral!
+        </p>
+        <ol>
+          <li class="refer-content">
+            Share your unique referral link with friends.
+          </li>
+          <li class="refer-content">Your friends sign up using your link.</li>
+          <li class="refer-content">
+            Earn rewards when they make their first purchase.
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2 class="refer-content">Your Referral Link</h2>
+        <input
+          type="text"
+          value="https://www.ourcompany.com/referral?code=YOURCODE"
+          readonly
+        />
+        <button onclick="copyLink()">Copy Link</button>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Our Company. All rights reserved.</p>
+    </footer>
+    <script>
+      function copyLink() {
+        const linkInput = document.querySelector('input[type="text"]');
+        linkInput.select();
+        document.execCommand("copy");
+        alert("Referral link copied to clipboard!");
+      }
+    </script>
+  </body>
+</html>

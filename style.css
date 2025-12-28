@@ -8,12 +8,48 @@
     --text-color: #333;
 }
 
+
+
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
     margin: 0;
     padding: 0;
     color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    margin: -1.5rem 0rem 1rem -1.5rem;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navimage {
+    width: 100%;
+    height: 362px;
+    margin-top: -10px;
+    background-image: url('navbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    margin-bottom: 5px;
+}
+
+.navitem:hover {
+    color: rgb(120, 207, 244);
+    transform: scale(1.1);
 }
 
 /* Header */
@@ -41,7 +77,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 /* Product Card */
@@ -123,6 +159,9 @@ header {
     margin-bottom: 1rem;
 }
 
+
+
+
 address {
     text-decoration: none;
     text-align: center;
@@ -132,6 +171,14 @@ address {
     font-size: 1rem;
     
 }
+.address {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.address:hover {
+    text-decoration: underline;
+    background-color: rgb(120, 207, 244);
+}
 
 footer {
     text-align: center;
@@ -139,4 +186,69 @@ footer {
     color: #777;
     font-size: 0.9rem;
 }
+
+
+/*refer & earn page styles*/
+.refer-image {
+    width: 100%;    
+    height: 400px;
+    margin-top: -10px;
+    background-image: url('referbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5px;
+}
+
+.refer-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.refer-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}       
+
+.refer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.refer-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.refer-button:hover {
+    background-color: #e68a00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}   
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+/* End of CSS Styles */
 
